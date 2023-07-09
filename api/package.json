@@ -13,21 +13,18 @@
     "@strapi/plugin-i18n": "4.11.4",
     "@strapi/plugin-users-permissions": "4.11.4",
     "@strapi/strapi": "4.11.4",
-    "mysql2": "^3.5.0",
-    "stripe": "^12.12.0"
+    "mysql": "2.18.1",
+    "stripe": "^12.11.0"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "fd7d0711-d924-46e9-bf99-cd855b7950fc"
+    "uuid": "1fdaa4f5-1f3a-4432-a31f-643ce3a00ada"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "@types/stripe": "^8.0.417"
-  }
+  "license": "MIT"
 }

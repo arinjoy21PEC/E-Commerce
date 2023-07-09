@@ -14,7 +14,7 @@
     "email": {
       "type": "string"
     },
-    "stripeid": {
+    "stripeId": {
       "type": "text"
     },
     "products": {

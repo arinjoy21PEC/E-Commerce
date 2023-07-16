@@ -27,12 +27,18 @@
     
     .right {
       flex: 3;
+      @media (max-width: 480px){
+        margin-left: 80px;
+      }
   
       .catImg{
         width: 100%;
         height: 300px;
         object-fit: cover;
         margin-bottom: 50px;
+        @media (max-width: 480px){
+          width: 530px;
+        }
       }
     }
   }

@@ -2,6 +2,9 @@
     padding: 20px 50px;
     display: flex;
     gap: 50px;
+    @media (max-width: 480px){
+      margin-top: 20px;
+    }
   
     .left {
       flex: 1;
@@ -9,6 +12,9 @@
       gap: 20px;
       .images {
         flex: 1;
+        @media (max-width: 480px){
+          margin-left: 100px;
+        }
   
         img{
           width: 100%;
@@ -16,6 +22,10 @@
           object-fit: cover;
           cursor: pointer;
           margin-bottom: 10px;
+          @media (max-width: 480px){
+            position: absolute;
+            height: 600px;
+          }
         }
       }
       .mainImg {
@@ -33,6 +43,9 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
+      @media (max-width: 480px){
+        margin-top: 700px;
+      }
   
       .price{
         font-size: 30px;

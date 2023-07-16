@@ -4,17 +4,31 @@
     padding: 15px;
     display: flex;
     justify-content: center;
+    @media (max-width: 480px){
+      width:800px;
+    }
   
     .wrapper{
       width: 50%;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media (max-width: 480px){
+        span{
+          font-size: 10px;
+          justify-content: space-between;
+          margin-right: 30px;
+        }
+      }
   
       input{
         padding: 10px;
         border: none;
         border-radius: 5px 0 0  5px;
+        @media (max-width: 480px){
+          height: 10px;
+          margin-left: 20px;
+        }
       }
   
       button{
@@ -23,11 +37,18 @@
         background: #333;
         border-radius: 0 5px 5px 0;
         border: none;
+        @media (max-width: 480px){
+          margin-top: 10px;
+          margin-left: 20px;
+        }
       }
   
       .icons{
         display: flex;
         gap: 10px;
+        @media (max-width: 480px){
+          margin-left: 50px;
+        }
       }
     }
   }

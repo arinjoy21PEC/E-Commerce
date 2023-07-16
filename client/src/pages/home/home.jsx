@@ -7,7 +7,7 @@ import Contact from '../../components/contact/contact'
 const home = () => {
   return (
     <div className='home'>
-      <Slider/>
+      <Slider className='slider'/>
       <Featuredproducts type="featured"/>
       <Categories/>
       <Featuredproducts type="trending"/>

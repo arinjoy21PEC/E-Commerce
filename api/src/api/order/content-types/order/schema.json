@@ -15,7 +15,7 @@
       "type": "string"
     },
     "stripeId": {
-      "type": "text"
+      "type": "string"
     },
     "products": {
       "type": "json"

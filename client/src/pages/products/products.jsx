@@ -15,7 +15,6 @@ const Products = () => {
     `/sub-categories?[filters][categories][id][$eq]=${catId}`
   );
 
-  const {categoryData} = useFetch(`/categories/${catId}?populate=*`);
 
   const handleChange = (e) => {
     const value = e.target.value;
@@ -27,7 +26,6 @@ const Products = () => {
         : selectedSubCats.filter((item) => item !== value)
     );
   };
-  console.log(categoryData?.attributes?.img?.categoryData?.attributes?.url)
 
   return (
     <div className="products">
@@ -88,7 +86,7 @@ const Products = () => {
       <div className="right">
         <img
           className="catImg"
-          src={categoryData?.attributes?.img?.categoryData?.attributes?.url}
+          src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
           alt=""
         />
         <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats} />

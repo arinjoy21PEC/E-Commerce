@@ -27,6 +27,7 @@ const Products = () => {
         : selectedSubCats.filter((item) => item !== value)
     );
   };
+  console.log(categoryData?.attributes?.img?.categoryData?.attributes?.url)
 
   return (
     <div className="products">

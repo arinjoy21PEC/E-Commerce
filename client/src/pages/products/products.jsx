@@ -15,6 +15,8 @@ const Products = () => {
     `/sub-categories?[filters][categories][id][$eq]=${catId}`
   );
 
+  const { categoryData, loading, error } = useFetch(`/categories/${id}?populate=*`);
+
   const handleChange = (e) => {
     const value = e.target.value;
     const isChecked = e.target.checked;
@@ -85,7 +87,7 @@ const Products = () => {
       <div className="right">
         <img
           className="catImg"
-          src={catId.img}
+          src={categoryData?.attributes?.img?.categoryData?.attributes?.url}
           alt=""
         />
         <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats} />

@@ -15,7 +15,7 @@ const Products = () => {
     `/sub-categories?[filters][categories][id][$eq]=${catId}`
   );
 
-  const { categoryData, loading, error } = useFetch(`/categories/${id}?populate=*`);
+  const {categoryData} = useFetch(`/categories/${id}?populate=*`);
 
   const handleChange = (e) => {
     const value = e.target.value;
